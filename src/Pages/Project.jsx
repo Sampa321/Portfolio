@@ -40,7 +40,7 @@ const projects = [
     icon: "🎯",
     color: "from-blue-500 to-cyan-500",
     status: "Final Year Project",
-    github: "https://github.com/outgoingrudra/Vettly",
+    github: "https://github.com/outgoingrudra/Vettly/tree/FinalYearProject-Sampa",
     number: "01",
   },
   {
@@ -53,7 +53,7 @@ const projects = [
     color: "from-emerald-500 to-teal-500",
     status: "Team Project",
     github:
-      "https://github.com/springboardmentor93924a-prog/Medical-platform",
+      "https://github.com/springboardmentor93924a-prog/Medical-platform/tree/team3-Sampa",
     number: "02",
   },
   {
@@ -65,7 +65,7 @@ const projects = [
     icon: "🛒",
     color: "from-purple-500 to-pink-500",
     status: "Personal Project",
-    github: "https://github.com/Sampa321",
+    github: "https://github.com/Sampa321/E-Commerce-App",
     number: "03",
   },
   {

@@ -37,7 +37,7 @@ const skillCategories = [
       },
       {
         name: "Python",
-        level: 65,
+        level: 45,
         image: "https://cdn.simpleicons.org/python/3776AB",
       },
       {
@@ -128,12 +128,12 @@ const skillCategories = [
       },
       {
         name: "PostgreSQL",
-        level: 65,
+        level: 55,
         image: "https://cdn.simpleicons.org/postgresql/4169E1",
       },
       {
         name: "Prisma ORM",
-        level: 55,
+        level: 45,
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
       }
     ],
@@ -652,10 +652,10 @@ export default function About() {
             <div className="flex items-center gap-3 text-gray-400 mb-7">
               <Phone size={19} className="text-blue-400" />
               <a
-                href="tel:+918653032972"
+                href="tel:+918617546986"
                 className="hover:text-blue-400 transition-colors"
               >
-                +91 8653032972
+                +91 8617546986
               </a>
             </div>
 

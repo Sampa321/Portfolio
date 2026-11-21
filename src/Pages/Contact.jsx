@@ -200,7 +200,7 @@ export default function Contact() {
 
                 {/* Phone */}
                 <a
-                  href="tel:+918653032972"
+                  href="tel:+918617546986"
                   aria-label="Phone"
                   className="group w-12 h-12 rounded-xl bg-[#101729] border border-white/10 flex items-center justify-center hover:border-green-500/50 hover:bg-green-500/10 hover:text-green-400 hover:-translate-y-2 transition-all duration-300"
                 >
