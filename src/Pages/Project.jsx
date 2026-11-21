@@ -33,12 +33,12 @@ const techLogos = {
 const projects = [
   {
     title: "Vettly",
-    category: "Interview & Assessment Platform",
-    description:
-      "A platform designed to manage recruitment, interviews, candidate assessments, and organization workflows.",
-    technologies: ["React", "Node.js", "Express", "PostgreSQL", "Prisma"],
-    icon: "🎯",
-    color: "from-blue-500 to-cyan-500",
+     category: "AI-Powered Interview & Assessment Platform",
+  description:
+    "An AI-powered interview and assessment platform designed to streamline candidate evaluation through customizable interviews, MCQ and written assessments, automated AI-based evaluation, and browser-based proctoring. Features interview scheduling, timed assessments, integrity monitoring, asynchronous evaluation, and detailed assessment results to help recruiters make informed hiring decisions.",
+  technologies: ["React", "Node.js", "Express.js", "Prisma",  "PostgreSQL", "Gemini AI", "RabbitMQ"],
+  icon: "🤖",
+  color: "from-purple-500 to-indigo-500",
     status: "Final Year Project",
     github: "https://github.com/outgoingrudra/Vettly/tree/FinalYearProject-Sampa",
     number: "01",
