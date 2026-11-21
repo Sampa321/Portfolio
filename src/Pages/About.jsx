@@ -187,12 +187,12 @@ const skillCategories = [
       },
       {
         name: "Advanced Spring Boot",
-        level: 55,
+        level: 35,
         image: "https://cdn.simpleicons.org/springboot/6DB33F",
       },
       {
         name: "Advanced Backend",
-        level: 50,
+        level: 40,
         image: "https://cdn.simpleicons.org/nodedotjs/339933",
       },
     ],

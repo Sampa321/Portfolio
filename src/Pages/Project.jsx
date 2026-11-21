@@ -57,17 +57,32 @@ const projects = [
     number: "02",
   },
   {
-    title: "E-Commerce Website",
+    title: "E-Commerce App",
     category: "Full Stack Web Application",
     description:
-      "An e-commerce application with product management, shopping cart, order placement, and an admin panel.",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+      "A full-stack e-commerce application that allows users to browse products, manage shopping carts, place orders, and complete payments through Stripe or Cash on Delivery (COD). Includes user authentication, order management, product management, and an admin dashboard for managing products and orders.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Stripe", "Tailwind CSS"],
     icon: "🛒",
     color: "from-purple-500 to-pink-500",
-    status: "Personal Project",
+    status: "Personal Project", r: "06",
     github: "https://github.com/Sampa321/E-Commerce-App",
     number: "03",
   },
+
+  
+  {
+    title: "Resume Builder App",
+    category: "Full Stack Web Application",
+    description:
+      "A full-stack resume builder application that allows users to create, customize, and preview professional resumes using multiple templates. Includes AI-powered assistance for generating and improving resume summaries, skills, education, and work experience.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Gemini AI", "Tailwind CSS"],
+    icon: "📄",
+    color: "from-blue-500 to-cyan-500",
+    status: "Personal Project",
+    github: "https://github.com/Sampa321/Resume-Builder-App",
+    number: "04",
+  },
+
   {
     title: "Bank Management System",
     category: "Java Desktop Application",
@@ -78,7 +93,7 @@ const projects = [
     color: "from-orange-500 to-amber-500",
     status: "Personal Project",
     github: "https://github.com/Sampa321/BankManagementSystem",
-    number: "04",
+    number: "05",
   },
 ];
 
