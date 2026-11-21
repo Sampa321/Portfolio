@@ -47,7 +47,7 @@ const projects = [
     title: "MediStock",
     category: "Medical Inventory Management",
     description:
-    "A full-stack medical inventory management system designed to manage medicines, stock levels, suppliers, purchase orders, and medicine returns. Features role-based access for Admin, Pharmacist, Staff, and Supplier, along with inventory tracking, user management, and purchase order processing.",
+  "A full-stack medical inventory management system designed to streamline medicine inventory, stock monitoring, supplier management, purchase orders, and medicine returns. Features role-based access for Admin, Pharmacist, Staff, and Supplier, with functionalities such as low-stock alerts, expiry tracking, inventory management, user management, purchase order processing, and stock updates upon order receiving. Provides a centralized platform for efficient medicine management and improved inventory control.",
     technologies: ["React", "Spring Boot", "Java", "MySQL", "Tailwind CSS"],
     icon: "🏥",
     color: "from-emerald-500 to-teal-500",
