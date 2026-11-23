@@ -8,6 +8,8 @@ import {
   Wrench,
   Sparkles,
   ArrowUpRight,
+  Brain,
+  Workflow
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
@@ -91,6 +93,19 @@ const skillCategories = [
       }
     ],
   },
+
+  {
+    title: "Messaging & Integration",
+    subtitle: "Managing asynchronous communication between applications",
+    icon: Workflow,
+    color: "from-amber-500 to-orange-500",
+    skills: [
+      {
+        name: "RabbitMQ",
+        logo: "https://cdn.simpleicons.org/rabbitmq/FF6600",
+      },
+    ],
+  },
   {
     title: "Databases",
     subtitle: "Storing and managing application data",
@@ -143,6 +158,18 @@ const skillCategories = [
       }
     ],
   },
+  {
+  title: "AI & Technologies",
+  subtitle: "Integrating AI into modern applications",
+  icon: Brain,
+  color: "from-violet-500 to-fuchsia-500",
+  skills: [
+    {
+      name: "Gemini AI",
+      logo: "https://cdn.simpleicons.org/googlegemini/8E75B2",
+    },
+  ],
+},
 ];
 
 // Reusable animated category card

@@ -14,8 +14,10 @@ import {
   Calendar,
   Sparkles,
   BookOpen,
-  ExternalLink,
+  ExternalLink
 } from "lucide-react";
+
+import { FaGithub } from "react-icons/fa";
 
 // ================= TECHNICAL SKILLS =================
 
@@ -170,6 +172,30 @@ const skillCategories = [
       }
     ],
   },
+   {
+  title: "Messaging & Integration",
+  icon: "📨",
+  description: "Managing asynchronous communication between applications.",
+  skills: [
+    {
+      name: "RabbitMQ",
+      level: 50,
+      image: "https://cdn.simpleicons.org/rabbitmq/FF6600",
+    },
+  ],
+},
+  {
+    title: "AI & Tools",
+    icon: "🤖",
+    description: "Using AI technologies to build smarter applications.",
+    skills: [
+      {
+        name: "Gemini AI",
+        level: 65,
+        image: "https://cdn.simpleicons.org/googlegemini/8E75B2",
+      },
+    ],
+  },
   {
     title: "Currently Learning",
     icon: "📚",
@@ -229,6 +255,7 @@ const education = [
 
 // ================= EXPERIENCE =================
 
+
 const experiences = [
   {
     role: "Infosys Springboard Intern",
@@ -236,6 +263,14 @@ const experiences = [
     startdate: "30-09-2026",
     description:
       "Participating in learning and professional development through the Infosys Springboard program.",
+
+    projectName: "MediStock – Medical Inventory Management System",
+
+    githubLink:
+      "https://github.com/springboardmentor93924a-prog/Medical-platform/tree/team3-Sampa",
+
+    liveDemoLink:
+      "https://medistock-web-230a.onrender.com/",
   },
 ];
 
@@ -781,6 +816,38 @@ export default function About() {
                   <p className="text-gray-400 leading-8 mt-4">
                     {item.description}
                   </p>
+
+                  {/* Project Details */}
+          {item.projectName && (
+            <div className="mt-6">
+              <h4 className="text-lg font-semibold text-white mb-3">
+                Project: {item.projectName}
+              </h4>
+
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={item.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-purple-500/20 hover:border-purple-500/40 hover:text-white transition-all duration-300"
+                >
+                  <FaGithub size={17} />
+                  GitHub Repository
+                  <ExternalLink size={14} />
+                </a>
+
+                <a
+                  href={item.liveDemoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/10 border border-purple-500/30 text-purple-300 hover:bg-purple-500 hover:text-white transition-all duration-300"
+                >
+                  <ExternalLink size={17} />
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          )}
                 </div>
               </div>
             </div>

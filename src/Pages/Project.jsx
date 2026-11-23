@@ -1,4 +1,4 @@
- 
+
 import {
   Code2,
   ExternalLink,
@@ -33,12 +33,12 @@ const techLogos = {
 const projects = [
   {
     title: "Vettly",
-     category: "AI-Powered Interview & Assessment Platform",
-  description:
-    "An AI-powered interview and assessment platform designed to streamline candidate evaluation through customizable interviews, MCQ and written assessments, automated AI-based evaluation, and browser-based proctoring. Features interview scheduling, timed assessments, integrity monitoring, asynchronous evaluation, and detailed assessment results to help recruiters make informed hiring decisions.",
-  technologies: ["React", "Node.js", "Express.js", "Prisma",  "PostgreSQL", "Gemini AI", "RabbitMQ"],
-  icon: "🤖",
-  color: "from-purple-500 to-indigo-500",
+    category: "AI-Powered Interview & Assessment Platform",
+    description:
+      "An AI-powered interview and assessment platform designed to streamline candidate evaluation through customizable interviews, MCQ and written assessments, automated AI-based evaluation, and browser-based proctoring. Features interview scheduling, timed assessments, integrity monitoring, asynchronous evaluation, and detailed assessment results to help recruiters make informed hiring decisions.",
+    technologies: ["React", "Node.js", "Express.js", "Prisma", "PostgreSQL", "Gemini AI", "RabbitMQ"],
+    icon: "🤖",
+    color: "from-purple-500 to-indigo-500",
     status: "Final Year Project",
     github: "https://github.com/outgoingrudra/Vettly/tree/FinalYearProject-Sampa",
     number: "01",
@@ -47,13 +47,14 @@ const projects = [
     title: "MediStock",
     category: "Medical Inventory Management",
     description:
-  "A full-stack medical inventory management system designed to streamline medicine inventory, stock monitoring, supplier management, purchase orders, and medicine returns. Features role-based access for Admin, Pharmacist, Staff, and Supplier, with functionalities such as low-stock alerts, expiry tracking, inventory management, user management, purchase order processing, and stock updates upon order receiving. Provides a centralized platform for efficient medicine management and improved inventory control.",
+      "A full-stack medical inventory management system designed to streamline medicine inventory, stock monitoring, supplier management, purchase orders, and medicine returns. Features role-based access for Admin, Pharmacist, Staff, and Supplier, with functionalities such as low-stock alerts, expiry tracking, inventory management, user management, purchase order processing, and stock updates upon order receiving. Provides a centralized platform for efficient medicine management and improved inventory control.",
     technologies: ["React", "Spring Boot", "Java", "MySQL", "Tailwind CSS"],
     icon: "🏥",
     color: "from-emerald-500 to-teal-500",
     status: "Team Project",
     github:
       "https://github.com/springboardmentor93924a-prog/Medical-platform/tree/team3-Sampa",
+    liveDemo: "https://medistock-web-230a.onrender.com/",
     number: "02",
   },
   {
@@ -66,6 +67,7 @@ const projects = [
     color: "from-purple-500 to-pink-500",
     status: "Personal Project", r: "06",
     github: "https://github.com/Sampa321/E-Commerce-App",
+    liveDemo : "https://e-commerce-app-1iox.vercel.app/",
     number: "03",
   },
 
@@ -79,8 +81,30 @@ const projects = [
     color: "from-blue-500 to-cyan-500",
     status: "Personal Project",
     github: "https://github.com/Sampa321/Resume-Builder-App",
+        liveDemo : "https://resume-builder-app-ib88.vercel.app/",
     number: "04",
   },
+
+  {
+  title: "Social Media App",
+  category: "Full Stack Web Application",
+  description:
+    "A full-stack social media application with secure user authentication, personalized feeds, and user profiles. Implemented a connection system with friend suggestions, sending, accepting, and rejecting requests, pending requests, and a friends list. Users can create, upload, view, delete, and like posts shared by their connections.",
+  technologies: [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "Postman",
+  ],
+  icon: "👥",
+  color: "from-blue-500 to-cyan-500",
+  status: "Personal Project",
+  number: "05",
+  github: "https://github.com/Sampa321/Social-Media-App",
+  liveDemo: "https://social-media-app-pwgj.vercel.app/",
+},
 
   {
     title: "Bank Management System",
@@ -92,7 +116,7 @@ const projects = [
     color: "from-orange-500 to-amber-500",
     status: "Personal Project",
     github: "https://github.com/Sampa321/BankManagementSystem",
-    number: "05",
+    number: "06",
   },
 ];
 
@@ -244,23 +268,46 @@ export default function Project() {
                   </div>
                 </div>
 
-                {/* GitHub Link */}
-                <div className="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+                {/* Project Links */}
+                <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
 
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-blue-400 hover:text-blue-300 group/link transition-colors"
-                  >
-                    <FaGithub size={18} />
-                    View on GitHub
+                  <div className="flex flex-wrap items-center gap-5">
 
-                    <ArrowUpRight
-                      size={17}
-                      className="group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"
-                    />
-                  </a>
+                    {/* GitHub Link */}
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-blue-400 hover:text-blue-300 group/link transition-colors"
+                    >
+                      <FaGithub size={18} />
+                      View on GitHub
+
+                      <ArrowUpRight
+                        size={17}
+                        className="group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"
+                      />
+                    </a>
+
+                    {/* Live Demo - Only if available */}
+                    {project.liveDemo && (
+                      <a
+                        href={project.liveDemo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm font-semibold text-purple-400 hover:text-purple-300 group/demo transition-colors"
+                      >
+                        <ExternalLink size={17} />
+                        Live Demo
+
+                        <ArrowUpRight
+                          size={16}
+                          className="group-hover/demo:translate-x-1 group-hover/demo:-translate-y-1 transition-transform"
+                        />
+                      </a>
+                    )}
+
+                  </div>
 
                   <span className="text-xs text-gray-600">
                     {project.status}
@@ -270,8 +317,7 @@ export default function Project() {
 
               </div>
             </div>
-          ))}
-
+            ))}
         </div>
 
 
