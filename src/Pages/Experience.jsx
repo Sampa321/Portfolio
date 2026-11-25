@@ -54,7 +54,7 @@ const experiences = [
     ],
     icon: Code2,
     color: "from-purple-500 to-pink-500",
-    github: "https://github.com/springboardmentor93924a-prog/Medical-platform",
+    github: "https://github.com/springboardmentor93924a-prog/Medical-platform/tree/team3-Sampa",
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ const experiences = [
     ],
     icon: GraduationCap,
     color: "from-emerald-500 to-teal-500",
-    github: "https://github.com/outgoingrudra/Vettly",
+    github: "https://github.com/outgoingrudra/Vettly/tree/FinalYearProject-Sampa",
   },
 ];
 
